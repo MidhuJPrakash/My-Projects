@@ -1,0 +1,144 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(227, 235, 236);
+}
+.header{
+    width:100%;
+    height: 40px;
+    background-color: rgb(236, 189, 101) ;
+}
+.menubar{
+    display: flex;      
+    flex-direction: row;
+    width:100%;
+    height: 50px;
+    background-color: rgb(0, 0, 0);
+    
+}
+a{
+    color: aliceblue; 
+    text-decoration: none;
+    flex-basis: 150px;
+    text-align: center;
+    padding-top: 15px;
+    font-weight: bolder;
+}
+.header-image{
+    width:100%;
+    height: 350px;
+    
+    /* background-image: url("https://images.pexels.com/photos/3184464/pexels-photo-3184464.jpeg?auto=compress&cs=tinysrgb&w=600"); */
+    background-repeat: no-repeat;
+    background-size:initial;
+    background-image: url(https://simondelasalle.com/wp-content/uploads/2020/12/content_header_backgrounds.jpg);
+    background-attachment: scroll;
+    background-position: cover;
+}
+
+.menu-container{
+    display: flex;
+    flex-direction: row;
+    height: 300px;
+    padding: 30px;
+    justify-content: space-evenly;
+}  
+.menu-items{
+    width: 30%;
+    border-radius: 8px;
+    border: groove ;
+    text-align: justify;
+    padding: 10px;
+    background-color: rgb(241, 248, 248);
+    box-shadow: 2px 2px dimgrey;
+    /* width: calc(100% / 3 - 20px); */
+}
+.menu-items p{
+    color:rgb(80, 31, 3);
+}
+h2{
+    padding-bottom: 8px;
+    font-weight: bold;
+}
+.main-container{
+    display: flex;
+    height: 300px;
+}
+.main-content{
+    background-color: rgb(241, 248, 248);
+    display: flex;
+    flex-direction: column;
+    width:70%;
+    padding:10px;
+    
+}
+.content{
+    padding: 10px;
+    text-align: justify;
+}
+.sub-header{
+    padding: 10px;
+    text-align: justify;
+}
+h3{
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+.navigation{
+    background-color: rgb(241, 248, 248);
+    width:30%;
+    padding:10px;
+}
+.nav-heading{
+    padding-top: 10px;
+}
+ul{
+    background-color: burlywood;
+    padding: 10px;
+    width: 90%;
+    border-radius: 3px;
+}
+li{
+ padding: 10px;   
+ font-size: 20px;
+ list-style: none;
+ color: brown;
+ 
+}
+
+.gallery-heading{
+    padding:10px;
+    text-align: center;
+}
+.gallery{
+    width:100%;
+    height:270px;
+    display: flex;
+    justify-content:space-between;
+    padding:20px;
+    
+}
+#bottom-images{
+    width: 350px;
+    height: 200px;
+    /* display:flex;
+    flex-direction: row; */
+}
+.footer-image{
+   width:30%;  
+}
+.image1{
+    background-color: greenyellow;
+}
+.image2{
+    background-color: brown;
+}
+.image3{
+    background-color: blueviolet;
+}
+.image4{
+    background-color: chocolate;
+}

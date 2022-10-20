@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.cards{
+    display: grid;
+    grid-gap: 2em;
+    margin: 0 auto;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+}
+.card{
+    background-color: blue;
+    color: rgb(240, 233, 233);
+    height: 4em;
+    width: 80%;
+    padding: 1rem;
+}

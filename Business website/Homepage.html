@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="business.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <script src="./Business.JS"></script>
+  <title>Business</title>
+</head>
+
+<body>
+  <!-- header section -->
+  <div class="header">
+    <div class="menubar">
+      <div class="logo">
+        <img src="logo image.png" alt="image-logo" />
+      </div>
+      <div class="hamburger-lines">
+        <span class="line line1"></span>
+        <span class="line line2"></span>
+        <span class="line line3"></span>
+      </div>
+      <div id="navbar" class="menus">
+        <a href="">HOME</a>
+        <a href="#about">ABOUT</a>
+        <a href="#services">OUR SERVICES </a>
+        <a href="">PROJECTS</a>
+        <a href="">BLOGS</a>
+        <a href="#contactus">CONTACT US</a>
+      </div>
+    </div>
+    <div class="heading">
+      <h1>We help Business Grow <span>And Innovate</span></h1>
+      <h4>
+        Its a long established fact that a reader will be distracted by more
+        or less normal
+      </h4>
+      <!-- <div class="head-buttons">
+          <button class="read-button">Read more</button>
+          <button class="contact-btn">Contact us</button>
+        </div> -->
+    </div>
+  </div>
+
+  <!-- About the company -->
+  <div id="about" class="abstract-container">
+    <div class="abstract-center">
+      <div class="abstract">
+        <h2 class="subheading">We are "Discouxt"</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Velit
+          sed ullamcorper morbi tincidunt ornare massa eget egestas purus.
+          Varius morbi enim nunc faucibus a pellentesque. Sed faucibus turpis
+          in eu mi bibendum neque egestas. Gravida arcu ac tortor dignissim
+          convallis aenean.
+        </p>
+        <button class="read-button">Read more</button>
+      </div>
+      <div class="abstract-image-container">
+        <img src="sevices.jpg" alt="" />
+      </div>
+    </div>
+  </div>
+  <!-- Company services -->
+  <div id="services" class="service-container">
+    <h2 class="subheading">Our Services</h2>
+
+    <div class="main-block">
+      <div class="service-blocks">
+        <h3>Creative idea</h3>
+        <p>
+          Modern designed and developed websites using the technique Velit
+          sedullamcorper morbi tincidunt ornare massa eget egestas purus.
+          Variusmorbi enim nunc faucibus a pellentesque.
+        </p>
+      </div>
+      <div class="service-blocks">
+        <h3>Web Design</h3>
+        <p>
+          Modern designed and developed websites using the technique. Velit
+          sed ullamcorper morbi tincidunt ornare massa eget egestas purus.
+          Varius morbi enim nunc faucibus a pellentesque.
+        </p>
+      </div>
+
+      <div class="service-blocks">
+        <h3>24/7 Support</h3>
+        <p>
+          Modern designed and developed websites using the technique. Velit
+          sed ullamcorper morbi tincidunt ornare massa eget egestas purus.
+          Varius morbi enim nunc faucibus a pellentesque.
+        </p>
+      </div>
+      <div class="service-blocks">
+        <h3>Web Development</h3>
+        <p>
+          Modern designed and developed websites using the technique. Velit
+          sed ullamcorper morbi tincidunt ornare massa eget egestas purus.
+          Varius morbi enim nunc faucibus a pellentesque.
+        </p>
+      </div>
+      <div class="service-blocks">
+        <h3>Responsive Layout</h3>
+        <p>
+          Modern designed and developed websites using the technique. Velit
+          sed ullamcorper morbi tincidunt ornare massa eget egestas purus.
+          Varius morbi enim nunc faucibus a pellentesque.
+        </p>
+      </div>
+      <div class="service-blocks">
+        <h3>Color Options</h3>
+        <p>
+          Modern designed and developed websites using the technique. Velit
+          sed ullamcorper morbi tincidunt ornare massa eget egestas purus.
+          Varius morbi enim nunc faucibus a pellentesque.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- About the team -->
+  <div class="footer-section">
+    <h2 class="subheading">Our Team</h2>
+    <div class="team-description">
+      <h3>Meet our team</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+    </div>
+    <div class="team-image-container">
+      <div class="team-members">
+        <div class="member1">
+          <div class="round-image">
+            <img src="./Person 2.jpg" alt="" />
+          </div>
+        </div>
+        <h4>James Lutto</h4>
+        <p>bchsdchsg</p>
+      </div>
+      <div class="team-members">
+        <div class="member1">
+          <div class="round-image">
+            <img src="./Person3.jpeg" alt="" />
+          </div>
+        </div>
+        <h4>Mary John</h4>
+        <p>cbsjcgshj</p>
+      </div>
+      <div class="team-members">
+        <div class="member1">
+          <div class="round-image">
+            <img src="./Person1.jpg" alt="" />
+          </div>
+        </div>
+        <h4>Kate Johnson</h4>
+        <p>nckjbcjg</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact details -->
+  <div id="contactus" class="footer">
+    <div class="footer-left">
+      <div class="contact-form">
+        <h3>Get in touch</h3>
+        <form action="" method="" onsubmit="onFormSubmit()">
+          <div class="person-name">
+            <label>Name</label>
+            <input type="text" id="customer_name" onblur="validateName()" />
+            <span id="name_error" class="form-error"></span>
+          </div>
+          <div class="phone-number">
+            <label>Phone Number</label>
+            <input type="text" id="phone_number" onblur="validatePhonenumber()" />
+            <span id="phone_error" class="form-error"></span>
+          </div>
+          <div class="emailid">
+            <label for="email">Email address</label>
+            <input type="text" id="email_id" onblur="validateEmail()" />
+            <span id="email_error" class="form-error"></span>
+          </div>
+          <div class="message">
+            <label>Message</label>
+            <textarea></textarea>
+          </div>
+          <div class="submit-btn">
+            <input type="submit" value="Submit" />
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Additional contact details -->
+    <div class="footer-right">
+      <div class="snippet">
+        <h3>You may also contact us on</h3>
+        <div class="office-address">
+          <i class="material-icons" style="font-size: 28px; margin-top: 4px">place</i>
+          <address>
+            Cresent Arcade, Electronic City,<br />Banglore - 094, India
+          </address>
+        </div>
+        <div class="support-mail">
+          <i class="material-icons" style="font-size: 26px; margin-top: 8px">email</i>
+          <a href="">support@discouxt.in</a>
+        </div>
+        <div class="support-phone">
+          <i class="material-icons" style="font-size: 25px">call</i>
+          <p>+91 9587903389</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    
+    background: beige;
+    background-size: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva;
+    min-height: 120cm;
+}
+header{
+    font-size: 1.3rem;
+}
+
+header, form{
+    min-height: 20vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+/* for input and adding new item */
+form input, form button{
+    padding: 0.6em;
+    border-color: yellowgreen;
+    font-size: 1em;
+    background:white;
+    border-style: ridge;
+}
+
+form button{
+    color: brown;
+    cursor:pointer;
+    transition: all 0.2secs ease-in;
+    inline-size: 3em;
+}
+
+form button:hover{
+        background: brown;
+        color:bisque;
+
+}
+/* list of items added */
+.todoContainer{
+    padding: 0.6em;
+    display: flex;
+    justify-content: center ;
+    align-items: flex-start;
+}
+
+.todoList{
+   
+    border-color: green;
+    background: white;
+    font-size: medium;
+    
+
+}
+
+.todo li{
+    flex:0.2cm;
+
+
+}
+/* delete and tick buttons */
+.deletebtn, .completebtn
+{
+    background: rgb(189, 30, 30);
+    color:beige;
+    padding: 0.1em;
+    cursor: pointer;
+    font-size: 0.4cm;
+
+}
+.completebtn{
+    background-color: green;
+    text-decoration: line-through; 
+}

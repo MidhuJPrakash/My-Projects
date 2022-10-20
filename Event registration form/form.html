@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Tangerine"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,700&family=Lora:ital,wght@1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./design.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h2>Event Registration Form</h2>
+    </header>
+    <!-- main container -->
+    <div class="main-container">
+      <!-- form -->
+      <form id="myform" method="get">
+        <!-- Full name of the person -->
+        <div class="input-fields">
+          <label> Your Name</label>
+          <input
+            type="text"
+            name="fullname"
+            id="fullname"
+            placeholder="Full Name"
+          />
+        </div>
+        <!-- Email address -->
+        <div class="input-fields">
+          <label>Email address</label>
+          <input
+            type="email"
+            placeholder=" Email id "
+            onsubmit= return validate();
+           
+          />
+        </div>
+        <!-- Phone number -->
+        <div class="input-fields">
+          <label>Phone number</label>
+          <input
+            type="text"
+            placeholder="123-123-1234"
+            name="phonenumber"
+            onchange="return validatePhoneNumber(p)"
+          />
+        </div>
+        <!-- count of members -->
+        <div class="input-fields">
+          <label>No.of persons</label>
+          <input type="number" name="number_of_persons" placeholder=" eg: 18 " min="1" max="500"/>
+        </div>
+
+        <!-- Date of event to be conducted -->
+        <div class="input-fields">
+          <label>Event date:</label>
+          <input
+            placeholder=" Type Date "
+            type="text"
+            onfocus="(this.type = 'date')"
+            id="date"
+          />
+        </div>
+        <!-- Favourite food -->
+        <div class="food-items">
+          <p>Please choose your favourite food</p>
+          <div class="food">
+            <span>
+              <input type="radio" name="food" value="Veg" />
+              <p>Veg</p>
+            </span>
+            <span>
+              <input type="radio" name="food" value="Non-veg" />
+              <p>Non-veg</p>
+            </span>
+          </div>
+        </div>
+        <!-- Favourite drink -->
+        <div class="fav-drink">
+          <p>Please choose your favourite drink</p>
+          <span>
+            <input type="radio" name="drink" value="Whisky" />
+            <p>Whisky</p>
+          </span>
+          <span>
+            <input type="radio" name="drink" value="Wine" />
+            <p>Wine</p>
+          </span>
+          <span>
+            <input type="radio" name="drink" value="Beer" />
+            <p>Beer</p>
+          </span>
+          <span>
+            <input type="radio" name="drink" value="Fresh Juices" />
+            <p>Fresh Juices</p>
+          </span>
+        </div>
+        <!-- Submit Button -->
+        <div>
+          <input type="submit" value="Submit" />
+        </div>
+      </form>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"
+      integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
+    <script src="registerapp.js"></script>
+  </body>
+</html>

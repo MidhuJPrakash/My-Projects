@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 8px;
+}
+
+.main-container {
+  display: flex;
+  padding: 10px;
+  margin: 50px 50px;
+}
+/* styling image*/
+.image-container {
+  padding-top: 0px;
+  display: flex;
+}
+/* book image */
+.book {
+  height: 400px;
+  width: 300px;
+}
+/* main heading */
+.heading {
+  font-family: Impact, Haettenschweiler;
+  font-size: 20pt;
+  display: flex;
+  padding: 0px;
+  color: maroon;
+  flex-direction: column;
+}
+
+/* author name, menus, paragragh */
+.text-container {
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+}
+/* author name */
+.author {
+  /* padding: 20px 15px 20px 15px; */
+
+  display: flex;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+.author-name {
+  color: black;
+}
+h4 {
+  color: blueviolet;
+  font-family: ui-serif;
+  font-size: 15pt;
+  word-spacing: 2px;
+  font-style: italic;
+}
+/* listing menus */
+.list {
+  display: flex;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+a {
+  text-decoration: none;
+  text-align: left;
+  color: #fff;
+  margin-right: 25px;
+  padding: 7px 25px;
+  background-color: rgb(25, 90, 16);
+  border-radius: 4px;
+}
+a:hover {
+  background-color: rgb(196, 42, 21);
+}
+
+/* paragraph */
+.paragraph {
+  display: flex;
+  padding-top: 0px;
+  padding-bottom: 20px;
+}
+
+p {
+  text-align: justify;
+  align-items: flex-start;
+}
+@media screen and (min-width:550px) and (max-width:850px){
+  
+  .heading{
+  font-size: 18px;
+}
+.main-container{
+  display: block;
+  margin: 0 auto;
+}
+.book{
+  margin: 0 auto;
+}
+.heading{
+  font-size: smaller;
+  
+}
+}

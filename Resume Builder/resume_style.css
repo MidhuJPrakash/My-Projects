@@ -1,0 +1,57 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+header{
+    background-color: blueviolet;
+    text-align:center;
+    height:50px;
+    width:100%;
+    position: fixed;
+    top: 0;
+    z-index: 9;
+    overflow: hidden;
+}
+h2{
+    padding-top: 10px;
+    color: rgb(252, 251, 250);
+    font-size:2em;
+    font-family:'Times New Roman';
+    
+}
+.main-container{
+    margin: 0 auto;
+    padding-top: 60px;
+    width: 70%;
+    border: darkgreen 2px solid;
+    display: flex;
+}
+h3{
+    font-size:1.5em;
+    color:blueviolet;
+    padding:10px;
+}
+label{
+    padding: 10px;
+}
+.input-container{
+    display:block;
+}
+   
+.input-fields{
+    display: flex;
+    flex-flow: row wrap;
+
+}
+input[type=text], input[type=date], input[type=email], textarea{
+    border: hidden;
+    border-bottom: groove;
+    
+}
+textarea{
+    border: hidden;
+    border-bottom: groove;
+    padding: 10px;
+}
+

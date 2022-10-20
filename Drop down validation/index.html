@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <!-- Form validation -->
+  <script>
+    function validateform() {
+      const value = document.getElementById("fruits").value;
+      console.log(fruits);
+      if (value == "-1") {
+        alert("please pick any of the fruit");
+      }
+      return false;
+
+      const email=
+    }
+  </script>
+  <body>
+    <form action="#" onsubmit="validateform()">
+      <select id="fruits">
+        <option value="-1" disabled selected hidden>Pick the fruit</option>
+        <option>Apple</option>
+        <option>Orange</option>
+        <option>Banana</option>
+        <option>Grapes</option>
+        </select><br />
+      <div>
+        <label>email:</label>
+        <input type="email" placeholder="eg: morrison@yahoo.com" />
+      </div>
+      <br />
+      <input type="submit" />
+    </form>
+  </body>
+</html>
